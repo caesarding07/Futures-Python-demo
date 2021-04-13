@@ -4,7 +4,7 @@ import datetime
 import uuid
 import urllib
 import asyncio
-import websockets
+import websocket
 import json
 import hmac
 import base64
@@ -52,7 +52,7 @@ async def subscribe(url, access_key, secret_key, subs, callback=None, auth=False
         auth: True: Need to be signatured. False: No need to be signatured.
 
     """
-    async with websockets.connect(url) as websocket:
+    async with websocket.connect(url) as websocket:
         if auth:
             timestamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%S")
             data = {

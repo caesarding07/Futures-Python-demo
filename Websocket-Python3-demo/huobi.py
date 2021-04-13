@@ -1,9 +1,18 @@
+'''
+Author: CaesarDing
+Date: 2021-04-12 15:07:41
+LastEditors: CaesarDing
+LastEditTime: 2021-04-13 13:45:41
+FilePath: \Futures-Python-demo\Websocket-Python3-demo\huobi.py
+Description: 
+'''
 # -*- coding: utf-8 -*-
 
 from websocket import create_connection
 import gzip
 import time
 
+print(__name__)
 if __name__ == '__main__':
     while(1):
         try:
